@@ -13,7 +13,7 @@ function App() {
     <div className="grid-container">
     <head>
         <link rel="stylesheet" href="index.css" />
-        <title>Iron Bloodhounds</title>
+        <title>Iron Bloodhound</title>
         </head>
 <body>
 <div>
