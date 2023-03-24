@@ -24,14 +24,14 @@ function App() {
 <body>
 <div>
     <header className="header">
-        <div className="brand">
+    <div className="brand">
             <button onClick={openMenu}>&#9776;</button>
         <a href="index.html">Iron Bloodhounds</a>
         </div>
         <div className="header-links">
            <Link to="/">Home</Link>
            <Link to="/catalog">Catalog</Link>
-           <Link to="/orders"></Orders></Link>
+           <Link to="/orders">Orders</Link>
            </div>
     </header>
     <aside className="sidebar">
@@ -51,7 +51,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<Products />} />
         <Route path="/orders" element={<Orders />}></Route>
-        <Route path="/orders/:id" element={<OrderDetail />}></Route>
+        <Route path="/orders/:id" element={<OrderDetail/>}></Route>
       </Routes>
     </main>
     <footer>
