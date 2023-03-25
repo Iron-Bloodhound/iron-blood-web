@@ -7,6 +7,7 @@ import Home from "./Home/Home";
 import Products from './Products/Products';
 import Orders from './Orders/Orders'
 import OrderDetail from './Orders/OrderDetail';
+import CheckoutSteps from './Payment/CheckoutSteps';
 
 function App() {
   const openMenu = () => {
