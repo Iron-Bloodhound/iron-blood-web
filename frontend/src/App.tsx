@@ -18,53 +18,50 @@ function App() {
   }
   return (
     <Router>
-    <div className="grid-container">
-    
-        <link rel="stylesheet" href="index.css" />
-        <title>Iron Bloodhound</title>
-        
-<body>
-<div>
-    <header className="header">
-    <div className="brand">
-            <button onClick={openMenu}>&#9776;</button>
-        <a href="index.html">Iron Bloodhounds</a>
-        </div>
-        <div className="header-links">
-           <Link to="/">Home</Link>
-           <Link to="/catalog">Catalog</Link>
-           <Link to="/orders">Orders</Link>
-           <Link to="/payment">Payment</Link>
-           </div>
-    </header>
-    <aside className="sidebar">
-        <h3>Shopping Categories</h3>
-        <button className="sidebar-close-button" onClick={closeMenu}>x</button>
-        <ul>
-            <li>
-                <a href="index.html">Pants</a>
-            </li>
-            <li>
-                <a href="index.html">Shirts</a>
-            </li>
-        </ul>
-    </aside>
-    <main className="main">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/catalog" element={<Products />} />
-        <Route path="/orders" element={<Orders />}></Route>
-        <Route path="/orders/:id" element={<OrderDetail/>}></Route>
-        <Route path="/payment" element={<CheckoutSteps />}></Route>
-      </Routes>
-    </main>
-    <footer>
-        &copy; 2023 Iron Bloodhounds
-    </footer>
-</div>
-</body>
-</div>
-</Router>
+      <div className="grid-container">
+        <body>
+          <div>
+            <header className="header">
+              <div className="brand">
+                <button onClick={openMenu}>&#9776;</button>
+                <a href="index.html">Operation: Draconic Beat</a>
+              </div>
+              <div className="header-links">
+                <Link to="/">Home</Link>
+                <Link to="/catalog">Catalog</Link>
+              </div>
+            </header>
+            <aside className="sidebar">
+              <h3>Shopping Categories</h3>
+              <button className="sidebar-close-button" onClick={closeMenu}>x</button>
+              <ul>
+                <li>
+                  <a href="index.html">All Products</a>
+                </li>
+                <li>
+                  <a href="index.html">Shirts</a>
+                </li>
+                <li>
+                  <a href="index.html">Pants</a>
+                </li>
+                <li>
+                  <a href="index.html">Shoes</a>
+                </li>
+              </ul>
+            </aside>
+            <main className="main">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/catalog" element={<Products />} />
+              </Routes>
+            </main>
+            <footer className="footer">
+              &copy; 2023 Operation: Draconic Beat
+            </footer>
+          </div>
+        </body>
+      </div>
+    </Router>
   );
 }
 
